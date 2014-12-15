@@ -81,7 +81,7 @@ juju add-machine ssh:ubuntu@${MYSQL_IP} #3
 
 mkdir -p charms/trusty
 test -d charms/trusty/mysql || git clone -b trusty https://github.com/vtolstov/charm-mysql charms/trusty/mysql
-test -d charms/trusty/gitlab || git clone -b trusty https://github.com/methodx/charm-gitlab charms/trusty/gitlab
+test -d charms/trusty/gitlab || git clone -b trusty https://github.com/vtolstov/charm-gitlab charms/trusty/gitlab
 test -d charms/trusty/haproxy || git clone -b trusty https://github.com/vtolstov/charm-haproxy charms/trusty/haproxy
 
 juju deploy --repository=charms/ local:trusty/mysql --to 3 || juju deploy --repository=charms/ local:trusty/mysql --to 3 || exit 1;
