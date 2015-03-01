@@ -63,7 +63,7 @@
     [
       {
         "type": "compress",
-        "format": "pgzip",
+        "format": "bgzf",
         "output": "output/gitlab-7.5-x86_64-compress/",
         "only": ["qemu"]
       }
