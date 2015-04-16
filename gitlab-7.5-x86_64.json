@@ -76,7 +76,7 @@
     },
     {
       "scripts": [
-        "scripts/ajenti.sh",
+        "scripts/gitlab.sh",
         "scripts/cloudinit.sh",
         "scripts/charmclean.sh",
         "scripts/cleanup.sh"
