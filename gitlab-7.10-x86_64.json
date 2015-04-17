@@ -25,7 +25,7 @@
       ],
       "boot_wait": "5s",
       "disk_interface": "scsi",
-      "disk_size": 5000,
+      "disk_size": 10000,
       "disk_cache": "unsafe",
       "format": "raw",
       "headless": true,
@@ -34,12 +34,12 @@
       "iso_checksum_type": "md5",
       "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04.2-server-amd64.iso",
       "net_device": "virtio-net",
-      "output_directory": "output/gitlab-7.5-x86_64-qemu/",
+      "output_directory": "output/gitlab-7.10-x86_64-qemu/",
       "machine_type": "pc-i440fx-1.7",
       "qemuargs": [
         [
           "-m",
-          "768"
+          "1024"
         ],
         [
           "-device",
@@ -47,7 +47,7 @@
         ],
         [
           "-drive",
-          "if=none,cache=unsafe,id=drive0,discard=unmap,file=output/gitlab-7.5-x86_64-qemu/gitlab-7.5-x86_64.raw"
+          "if=none,cache=unsafe,id=drive0,discard=unmap,file=output/gitlab-7.10-x86_64-qemu/gitlab-7.10-x86_64.raw"
         ],
         [
           "-device",
@@ -63,7 +63,7 @@
       "ssh_username": "root",
       "ssh_wait_timeout": "10000s",
       "type": "qemu",
-      "vm_name": "gitlab-7.5-x86_64"
+      "vm_name": "gitlab-7.10-x86_64"
     }
   ],
   "provisioners": [
@@ -90,7 +90,7 @@
       {
         "type": "compress",
         "format": "bgzf",
-        "output": "output/gitlab-7.5-x86_64-compress/",
+        "output": "output/gitlab-7.10-x86_64-compress/",
         "only": ["qemu"]
       }
     ]
