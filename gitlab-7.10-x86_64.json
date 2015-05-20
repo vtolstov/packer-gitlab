@@ -78,6 +78,10 @@
         "metadata": true,
         "output": "output/gitlab-7.10-x86_64-compress/",
         "only": ["qemu"]
+      },
+      {
+        "type": "checksum",
+        "output": "output/gitlab-7.10-x86_64-compress/"
       }
     ]
   ]
